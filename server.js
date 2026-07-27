@@ -4,6 +4,17 @@ dotenv.config();
 import app from "./app.js";
 import connectDB from "./config/db.js";
 
-await connectDB();
+try {
+  console.log("Starting server...");
+  console.log("NODE_ENV:", process.env.NODE_ENV);
+  console.log("Mongo URI exists:", !!process.env.MONGODB_URI);
 
-export default app;
+  await connectDB();
+
+  console.log("MongoDB Connected");
+
+  export default app;
+} catch (err) {
+  console.error("SERVER STARTUP ERROR:", err);
+  throw err;
+}
