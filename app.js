@@ -67,8 +67,6 @@ const limiter = rateLimit({
 
 app.use('/api', limiter);
 
-app.use('/uploads', express.static('uploads'));
-
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     success: true,
