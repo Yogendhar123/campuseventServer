@@ -12,7 +12,7 @@ import categoryRoutes from './routes/categoryRoutes.js';
 import venueRoutes from './routes/venueRoutes.js';
 import registrationRoutes from './routes/registrationRoutes.js';
 import attendanceRoutes from './routes/attendanceRoutes.js';
-import certificateRoutes from './routes/certificateRoutes.js';
+
 import feedbackRoutes from './routes/feedbackRoutes.js';
 import notificationRoutes from './routes/notificationRoutes.js';
 import dashboardRoutes from './routes/dashboardRoutes.js';
@@ -83,7 +83,6 @@ app.use('/api/categories', categoryRoutes);
 app.use('/api/venues', venueRoutes);
 app.use('/api/registrations', registrationRoutes);
 app.use('/api/attendance', attendanceRoutes);
-app.use('/api/certificates', certificateRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/dashboard', dashboardRoutes);
