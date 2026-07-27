@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+.env
+!backend/.env.example
+backend/logs/*.log
+backend/uploads/certificates/*.pdf
+.DS_Store
